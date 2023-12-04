@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/project?serverTimezone=UTC&characterEncoding=UTC-8
+    username: root
+    password: rootroot
+
+  application:
+    name: zerobase-tabling
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+      hibernate.id.new_generator_mappings : false
+    show-sql: true
+    defer-datasource-initialization: true
+
+  jwt:
+    secret: emVyb2Jhc2Utc3ByaW5nLWJvb3QtdGFibGluZy1zZXJ2aWNlLW1pc3NvbjE=
